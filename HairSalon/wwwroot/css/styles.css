@@ -24,6 +24,11 @@ div#header {
   text-shadow: 2px 2px 2px black;
 }
 
+.home {
+  text-align: center;
+  
+}
+
 .card {
   background-color: rgba(128, 128, 128, 0.479);
   text-align: center;
@@ -52,10 +57,6 @@ div#header {
   margin-left: 32vw;
   background-color: rgb(88, 187, 64);
   color: rgb(200, 255, 0);
-}
-
-.newStylist {
-  margin-left: 33vw;
 }
 
 .updateStylist {
@@ -112,3 +113,21 @@ div#header {
 .btn2 {
   margin-left: 1vw;
 }
+
+.btn3 {
+  margin-left: 11vw;
+  width: 6vw;
+  margin-bottom: 1vh;
+}
+
+.btn4 {
+  margin-left: 10.5vw;
+  width: 7vw;
+  margin-bottom: 1vh;
+}
+
+.btn5 {
+  margin-left: 9.5vw;
+  width: 9vw;
+}
+
