@@ -19,7 +19,7 @@
       @foreach (Client client in Model)
       {
         <div class="stylist">
-          <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) Is Seeing Sylist @client.Stylist.StylistName</li>
+          <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | @client.Stylist.StylistName</li>
         </div>  
       }
     </ul>

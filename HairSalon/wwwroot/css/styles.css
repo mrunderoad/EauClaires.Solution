@@ -72,13 +72,21 @@ div#header {
   margin-left: 1vw;
 }
 
-.clientIndexCard {
+.clientIndexCard, .stylistClients {
   margin-left: 15vw;
   width: 15vw;
 }
 
-.addClientInfo {
+.addClientInfo, .stylistOptions {
   width: 30vw;
+  margin-left: 1vw;
+}
+
+.clientInfo1 {
+  margin-left: 15vw;
+}
+
+.clientInfo2 {
   margin-left: 1vw;
 }
 
@@ -95,4 +103,12 @@ div#header {
 
 .stylist li::before {
   content: '✂️';
+}
+
+.btn1 {
+  margin-left: 30vw;
+}
+
+.btn2 {
+  margin-left: 1vw;
 }

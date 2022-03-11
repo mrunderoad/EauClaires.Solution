@@ -8,11 +8,20 @@
   <h1>Details for <strong>@Html.DisplayFor(model => model.ClientName)</strong></h1>
 </div>
 <hr />
-<h3>Client Appointment Date:</h3>
-<h5>@Html.DisplayFor(model => model.ClientDate)</h5>
-<h3>Client Appointment Notes:</h3>
-<h5>@Html.DisplayFor(model => model.ClientNotes)</h5>
+<div class="row">
+  <div class="card clientInfo1">
+    <h3>@Html.DisplayFor(model => model.ClientName)'s Appointment Date:</h3>
+    <h5>@Html.DisplayFor(model => model.ClientDate)</h5>
+  </div>
+  <div class="card clientInfo2">
+    <h3>@Html.DisplayFor(model => model.ClientName)'s Appointment Notes:</h3>
+    <h5>@Html.DisplayFor(model => model.ClientNotes)</h5>
+  </div>
+</div>
 <hr />
-<p>@Html.ActionLink("Back to List", "Index")</p>
-<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
+<div class="card clientOptions">
+  <div class="row">
+    <button class="btn-warning btn1">@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</button>
+    <button class="btn-warning btn2">@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</button>
+  </div>
+</div>
