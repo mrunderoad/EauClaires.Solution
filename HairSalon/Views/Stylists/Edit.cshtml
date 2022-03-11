@@ -10,10 +10,13 @@
 
 @using (Html.BeginForm())
 {
-  @Html.HiddenFor(model => model.StylistId)
-
-  <h3>Update Stylist Name:</h3>
-  @Html.EditorFor(model => model.StylistName)
-
-  <input type="submit" value="Save" />
+  <div class="row">
+    <div class="card updateStylist">
+      @Html.HiddenFor(model => model.StylistId)
+      <h3>Update Stylist Name:</h3>
+      @Html.EditorFor(model => model.StylistName)
+    </div>
+  </div>
+  <br>
+  <input class="updateStylistBtn" type="submit" value="Update Stylist" />
 }
