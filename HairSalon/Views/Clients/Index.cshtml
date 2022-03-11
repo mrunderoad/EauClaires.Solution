@@ -9,17 +9,24 @@
   <h1>Avaliable Clients:</h1> 
 </div> 
 <hr />
-
-@if (@Model.Count == 0)
-{
-  <h3>No Clients avaliable! Please add a client from Stylist details page.</h3>
-}
-<ul>
-  @foreach (Client client in Model)
-  {
-    <div class="stylist">
-      <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | @client.Stylist.StylistName</li>
-    </div>  
-  }
-</ul>
+<div class="row">
+  <div class="card clientIndexCard">
+    @if (@Model.Count == 0)
+    {
+      <h3>No Clients avaliable! Please add a client from Stylist details page.</h3>
+    }
+    <ul>
+      @foreach (Client client in Model)
+      {
+        <div class="stylist">
+          <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) Is Seeing Sylist @client.Stylist.StylistName</li>
+        </div>  
+      }
+    </ul>
+  </div>
+  <div class="card addClientInfo">
+    <h3>~How to add a Client~</h3>
+    <p>Click on a Stylist then click on "Add new Client", this will take you to a new Client page. Enter the Client Name, Appointment Date and any notes and click "Add new Client". This will redirect you to the all Clients page. After clicking on the desired Client you are able to edit and delete the Client.</p>
+  </div>
+</div>
 <hr />
