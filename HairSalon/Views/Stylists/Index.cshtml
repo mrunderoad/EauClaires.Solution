@@ -6,6 +6,7 @@
 @model List<HairSalon.Models.Stylist>;
 
 <h2>Stylists at Eau Claires Salon:</h2>
+<hr />
 @if (Model.Count == 0)
 {
   <h3>There are no Stylists at Eau Claires at the moment. Please check later. Sorry for the inconvenience!</h3>
@@ -17,5 +18,5 @@
     <li>@Html.ActionLink($"{stylist.StylistName}", "Details", new { id = stylist.StylistId })</li>
   }
 </ul>
-
+<hr />
 <p>@Html.ActionLink("Add new Stylist", "Create")</p>
