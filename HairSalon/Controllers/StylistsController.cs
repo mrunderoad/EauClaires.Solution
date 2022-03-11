@@ -46,6 +46,7 @@ namespace HairSalon.Controllers
       return View(thisStylist);
     }
 
+    [HttpPost]
     public ActionResult Edit(Stylist stylist)
     {
       _db.Entry(stylist).State = EntityState.Modified;
@@ -64,6 +65,10 @@ namespace HairSalon.Controllers
     {
       var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
       _db.Stylists.Remove(thisStylist);
+      foreach(Client client in thisStylist.Clients)
+      {
+        _db.Clients.Remove(client);
+      }
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
