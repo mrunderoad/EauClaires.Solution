@@ -4,21 +4,35 @@
 
 @model HairSalon.Models.Client
 
-<h2>Edit Client: <strong>@Html.DisplayFor(model => model.ClientName)</strong></h2>
+<div class="jumbotron">
+  <h1>Edit Client: <strong>@Html.DisplayFor(model => model.ClientName)</strong></h1>
+</div>
 
 @using (Html.BeginForm())
 {
-  @Html.HiddenFor(model => model.ClientId)
-  <h3>Update Client Name:</h3>
-  @Html.EditorFor(model => model.ClientName)
-  <h3>Update Client Appointment Date:</h3>
-  @Html.EditorFor(model => model.ClientDate)
-  <h3>Update Client Appointment Notes:</h3>
-  @Html.EditorFor(model => model.ClientNotes)
-  <h3>What Stylist does this Client want to see?</h3>
-  @Html.DropDownList("StylistId")
+  <div class="row">
+    <div class="card nameCard">
+      @Html.HiddenFor(model => model.ClientId)
+      <h4>Client Name:</h4>
+      @Html.EditorFor(model => model.ClientName)
+    </div>
+    <div class="card dateCard">
+      <h4>Client Appointment Date:</h4>
+      @Html.EditorFor(model => model.ClientDate)
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="card noteCard">
+      <h4>Client Notes for Appointment:</h4>
+      @Html.EditorFor(model => model.ClientNotes)
+    </div>
+    <div class="card stylistCard"> 
+      <h4>What Stylist would this Client like to see?</h4>
+      @Html.DropDownList("StylistId")
+    </div>
+  </div>   
   <br>
-  <input type="submit" value="Save" />
+  <input class="editClientBtn" type="submit" value="Update Client" />
 }
 
 <p>@Html.ActionLink("Back to Client List", "Index")</p>

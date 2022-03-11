@@ -4,7 +4,9 @@
 
 @model HairSalon.Models.Client
 
-<h2>Details for <strong>@Html.DisplayFor(model => model.ClientName)</strong></h2>
+<div class="jumbotron">
+  <h1>Details for <strong>@Html.DisplayFor(model => model.ClientName)</strong></h1>
+</div>
 <hr />
 <h3>Client Appointment Date:</h3>
 <h5>@Html.DisplayFor(model => model.ClientDate)</h5>

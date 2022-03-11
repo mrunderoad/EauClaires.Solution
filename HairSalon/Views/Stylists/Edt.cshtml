@@ -4,7 +4,9 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Edit Stylist: <strong>@Html.DisplayFor(model => model.StylistName)</strong></h2>
+<div class="jumbotron">
+  <h1>Edit Stylist: <strong>@Html.DisplayFor(model => model.StylistName)</strong></h1>
+</div>
 
 @using (Html.BeginForm())
 {

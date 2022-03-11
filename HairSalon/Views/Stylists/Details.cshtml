@@ -5,7 +5,9 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist;
 
-<h2>Stylist Details</h2>
+<div class="jumbotron">
+  <h1>Stylist Details</h1>
+</div>
 <hr />
 <h4>@Html.DisplayFor(model => model.StylistName)'s Clients</h4>
 @foreach(Client client in Model.Clients)

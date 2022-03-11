@@ -14,3 +14,42 @@ div#header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.jumbotron {
+  background-image: url("https://media.glamour.com/photos/5b0447840695f850742fe519/master/w_2560%2Cc_limit/longform-lede-hair-tipping.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.card {
+  background-color: rgba(128, 128, 128, 0.479);
+  text-align: center;
+  padding: 1%;
+}
+
+.nameCard {
+  margin-left: 21vw;
+  margin-bottom: 2vh;
+}
+
+.dateCard {
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+}
+
+.noteCard {
+  margin-left: 11vw;
+}
+
+.stylistCard {
+  margin-left: 2vw;
+}
+
+.newClientBtn, .editClientBtn {
+  margin-left: 32vw;
+  background-color: rgb(88, 187, 64);
+  color: rgb(200, 255, 0);
+}
