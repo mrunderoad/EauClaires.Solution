@@ -5,6 +5,7 @@
 @model HairSalon.Models.Stylist
 <div class="card">
   <h2>Are you sure you want to delete <strong>@Html.DisplayFor(model => model.StylistName)</strong> from avaliable Stylists?</h2>
+  <p>Note: This also deletes all Clients associated with @Html.DisplayFor(model => model.StylistName).</p>
 
   @using (Html.BeginForm())
   {
