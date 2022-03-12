@@ -12,19 +12,19 @@
 {
   <div class="row">
     <div class="card nameCard">
-      @Html.HiddenFor(model => model.ClientId)
+      @Html.HiddenFor(model => model.ClientId, new { required="required"})
       <h4>Client Name:</h4>
-      @Html.EditorFor(model => model.ClientName)
+      @Html.EditorFor(model => model.ClientName, new { required="required"})
     </div>
     <div class="card dateCard">
       <h4>Client Appointment Date:</h4>
-      @Html.EditorFor(model => model.ClientDate)
+      @Html.EditorFor(model => model.ClientDate, new { required="required"})
     </div>
   </div>
   <div class="row"> 
     <div class="card noteCard">
       <h4>Client Notes for Appointment:</h4>
-      @Html.EditorFor(model => model.ClientNotes)
+      @Html.EditorFor(model => model.ClientNotes, new { required="required"})
     </div>
     <div class="card stylistCard"> 
       <h4>What Stylist would this Client like to see?</h4>

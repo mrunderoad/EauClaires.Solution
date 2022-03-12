@@ -9,8 +9,8 @@ div#header {
   text-align: center;
 }
 
-.home {
-  /* background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-wood-jj-02_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e158db7add72dd56a2ccfdb61100d2d2"); */
+.page {
+  background-image: url("https://img.freepik.com/free-photo/vintage-border-salon-tools-wooden-table-jobs-career-concept_53876-128908.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -26,13 +26,15 @@ div#header {
 
 .home {
   text-align: center;
-  
+  color: white;
 }
 
 .card {
-  background-color: rgba(128, 128, 128, 0.479);
+  background-color: rgb(128, 128, 128);
   text-align: center;
   padding: 1%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px black;
 }
 
 .nameCard {
@@ -106,6 +108,10 @@ div#header {
   content: '✂️';
 }
 
+.newStylist {
+  margin-left: 33vw;
+}
+
 .btn1 {
   margin-left: 30vw;
 }
@@ -131,3 +137,27 @@ div#header {
   width: 9vw;
 }
 
+a {
+  color: rgb(94, 255, 0);
+  text-shadow: 1px 1px 1px black;
+}
+
+a:hover {
+  color: red;
+}
+
+.welcome {
+  font-size: 20px;
+  background: gray;
+  border-radius: 10px;
+}
+
+.newStylistCard {
+  width: 25vw;
+  margin-left: 24vw;
+}
+
+.newStylistBtn {
+  background-color: rgb(88, 187, 64);
+  color: rgb(200, 255, 0);
+}

@@ -2,7 +2,7 @@
 
 ### _By: Isaac Overstreet_
 
-#### _This application lets users add stylists and clients specific to each stylist._
+#### _This application lets users add stylists and clients specific to each stylist using a one to many database relationship._
 
 ## Technologies Used
 

@@ -7,11 +7,12 @@
 <div class="jumbotron">
   <h1>Add a new Stylist here!</h1>
 </div>
-@using (Html.BeginForm())
-{
-  <h3>Stylist Name:</h3>
-  @Html.TextBoxFor(model => model.StylistName)
-  <br>
-  <input type="submit" value="Add new Stylist" />
-}
-<p>@Html.ActionLink("Show all Stylists", "Index")</p>
+<div class="card newStylistCard">
+  @using (Html.BeginForm())
+  {
+    <h3>Stylist Name:</h3>
+    @Html.TextBoxFor(model => model.StylistName, new { required="required"})
+    <br>
+    <input class="newStylistBtn" type="submit" value="Add new Stylist" />
+  }
+</div>
