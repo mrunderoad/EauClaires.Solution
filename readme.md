@@ -11,6 +11,7 @@
 * _cshtml_
 * _css_
 * _Bootstrap_
+* _Entity Framework_
 
 ## Description
 
@@ -30,6 +31,16 @@ _This project is made to show correct knowledge on a one to many relationship us
   }
 }
 ```
+* _**How to Import Database**_
+* _Open MySQL Workbench_
+* _Select the `Administration` tab in the `Navigation` panel._
+* _Click `Data Import/Restore`._
+* _Select `Import from self-contained file`, navigate to the `HairSalon` directory and select `isaac_overstreet.sql`._
+* _In `Default Schema to be Imported to` click new and name the schema._
+* _**MAKE SURE YOU ENTER DATABASE NAME INTO** `appsettings.json`!!_
+* _Next, click `Start Import`._
+* _You're now all set, refresh MySQL workbench and check that the schema is there._
+* _**NEXT STEPS**_
 * _Run `dotnet restore` to restore the bin and obj folders._
 * _Run `dotnet build` to build the project._
 * _Run `dotnet run` to open a localhost._
